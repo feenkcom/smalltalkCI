@@ -12,5 +12,5 @@ runClasses: aCollectionOfClasses spec: aSCISpec
 			reject: #ignoreTestReport) ].
 	examplesGroup := SCIExplicitExampleGroup new
 		examples: examples;
-		name: aSCISpec name.
+		name: aSCISpec name, ' - examples'.
   ^ self runSuite: examplesGroup spec: aSCISpec

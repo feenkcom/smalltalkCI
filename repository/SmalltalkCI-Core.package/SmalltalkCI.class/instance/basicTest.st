@@ -16,5 +16,5 @@ basicTest
 			self finishUpAfterTesting ].
 	self reportResults: exampleRunner.
 	self reportResults: testRunner.
-	(exampleRunner isSuccessful or: [ testRunner isSuccessful ])
-		ifFalse: [ SCIError signal: '[test failure]' ]
+	(exampleRunner isSuccessful not or: [ testRunner isSuccessful not ])
+		ifTrue: [ SCIError signal: '[test failure]' ]

@@ -10,7 +10,7 @@ basicTest
 			self executionClass
 				run: [ 
 					testRunner := self runTests.
-					(self class canPerform: #runExamples) ifTrue: [
+					(self class canUnderstand: #runExamples) ifTrue: [
 						exampleRunner := self runExamples] ]
 				spec: self spec
 				in: self projectDirectory.

@@ -10,11 +10,13 @@ basicTest
 			self executionClass
 				run: [ 
 					testRunner := self runTests.
-					exampleRunner := self runExamples ]
+					(self class canPerform: #runExamples) ifTrue: [
+						exampleRunner := self runExamples] ]
 				spec: self spec
 				in: self projectDirectory.
 			self finishUpAfterTesting ].
-	self reportResults: exampleRunner.
+	exampleRunner isNil ifFalse: [ 
+		self reportResults: exampleRunner. ].
 	self reportResults: testRunner.
-	(exampleRunner isSuccessful not or: [ testRunner isSuccessful not ])
+	((exampleRunner notNil and: [ exampleRunner isSuccessful not]) or: [ testRunner isSuccessful not ])
 		ifTrue: [ SCIError signal: '[test failure]' ]

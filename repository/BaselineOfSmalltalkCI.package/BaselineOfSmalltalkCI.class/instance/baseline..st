@@ -59,7 +59,7 @@ baseline: spec
 					with: [ 
 							spec
 								requires: #('Ston');
-								includes: #('SmalltalkCI-Pharo-Core' 'Ston') ];
+								includes: #('SmalltalkCI-Pharo-Core' 'Ston' 'SmalltalkCI-Pharo-Examples') ];
 				package: 'SmalltalkCI-Pharo-Core'
 					with: [ spec requires: #('SmalltalkCI-Core' 'SmalltalkCI-Coverage-Core') ];
 				package: 'SmalltalkCI-Pharo-Examples'

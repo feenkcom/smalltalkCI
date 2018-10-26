@@ -3,7 +3,7 @@ runClasses: aCollectionOfClasses spec: aSCISpec
   | examples examplesGroup classes |
   examples := OrderedCollection new. "named: aSCISpec name".
   classes := (aCollectionOfClasses
-    select: [ :each | each isAbstract not and: [ each isTrait not ] ])
+    select: [ :each | each hasAbstractMethods not and: [ each isTrait not ] ])
       asSortedCollection: [ :a :b | a name <= b name ].
   classes
     do: [ :aClass | 

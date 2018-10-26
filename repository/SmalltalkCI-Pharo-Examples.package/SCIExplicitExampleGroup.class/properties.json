@@ -1,12 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GtExplicitExampleGroup",
+	"super" : "Object",
 	"category" : "SmalltalkCI-Pharo-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name"
+		"name",
+		"examples"
 	],
 	"name" : "SCIExplicitExampleGroup",
 	"type" : "normal"

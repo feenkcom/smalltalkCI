@@ -1,3 +1,3 @@
 running
 setUp
-	SmalltalkCI printToStdout: 'Running suite "', self suiteName ,'" with ', suite examples size asString, ' examples.'.
+	SmalltalkCI printToStdout: 'Running suite "', self suiteName ,'" with ', self totalTests asString, ' examples.'.

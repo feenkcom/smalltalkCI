@@ -1,6 +1,6 @@
 running
 setUp
-	SmalltalkCI printToStdout: 'Running suite "', self suiteName ,'" with ', suite tests size asString, ' tests.'.
+	SmalltalkCI printToStdout: 'Running suite "', self suiteName ,'" with ', self totalTests asString, ' tests.'.
 
 	"Initialize the test resources."
 	suite resources do: [ :each |

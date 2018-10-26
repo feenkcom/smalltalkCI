@@ -52,6 +52,8 @@ baseline: spec
 						loads: #('Core');
 						repository:
 								'http://smalltalkhub.com/mc/SvenVanCaekenberghe/STON/main' ].
+			spec baseline: 'GToolkitExamplesEngine' with: [ spec 
+				repository: 'github://feenkcom/gtoolkit-examples/src' ].
 			spec
 				package: 'SmalltalkCI-Core'
 					with: [ 
@@ -60,6 +62,8 @@ baseline: spec
 								includes: #('SmalltalkCI-Pharo-Core' 'Ston') ];
 				package: 'SmalltalkCI-Pharo-Core'
 					with: [ spec requires: #('SmalltalkCI-Core' 'SmalltalkCI-Coverage-Core') ];
+				package: 'SmalltalkCI-Pharo-Examples'
+					with: [ spec requires: #('SmalltalkCI-Pharo-Core' 'GToolkitExamplesEngine') ];
 				package: 'SmalltalkCI-Pharo-Tests'
 					with: [ spec requires: #('SmalltalkCI-Pharo-Core') ];
 				yourself.

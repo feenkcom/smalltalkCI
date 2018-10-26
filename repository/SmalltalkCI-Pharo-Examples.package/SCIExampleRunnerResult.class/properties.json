@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GtExampleWithResult",
+	"category" : "SmalltalkCI-Pharo-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"time"
+	],
+	"name" : "SCIExampleRunnerResult",
+	"type" : "normal"
+}

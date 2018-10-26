@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SCITestRunner",
+	"category" : "SmalltalkCI-Pharo-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SCIPharoExampleRunner",
+	"type" : "normal"
+}

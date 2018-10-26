@@ -2,9 +2,9 @@ printing
 printResult: aResult
 	self
 		tab; print: '<testcase classname="';
-		print: (self encode: (aResult testCase class category asString copyReplaceAll: '-' with: '.'));
-		print: '.', (self encode: aResult testCase class name), '" ';
-		print: 'name="', (self encode: aResult testCase selector), '" ';
+		print: (self encode: (aResult testClass category asString copyReplaceAll: '-' with: '.'));
+		print: '.', (self encode: aResult testClass name), '" ';
+		print: 'name="', (self encode: aResult selector), '" ';
 		print: 'time="', (aResult time / 1000.0) asString, '">'.
 	aResult passed ifFalse: [
 		self newLine.

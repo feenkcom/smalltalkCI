@@ -1,5 +1,5 @@
 printing
-asString
+printOn: aStream
   "note - both asString and printOn: need to be implemented for portability"
 
-  ^ '#', self selector asString
+  aStream nextPutAll: self asString
